@@ -1,0 +1,148 @@
+.page-header {
+  @media (min-width: $desktop-width-only) {
+    min-height: 825px;
+    padding-top: 12px;
+    padding-bottom: 21px;
+
+    background-color: $page-header_bg;
+    background-image: url("../img/bg-bicycle-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-bicycle-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.page-header_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 880px;
+  padding: 0;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.page-header__main-nav {
+  @media (min-width: $desktop-width-only) {
+    margin-bottom: 255px;
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+}
+
+.page-header__about-us {
+  width: 380px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    min-height: 340px;
+    margin-bottom: 70px;
+    padding: 25px 21px;
+    padding-bottom: 78px;
+
+    background-color: $page-header-about-us_bg;
+    background-image: url("../img/bg-bicycle-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-bicycle-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 319px;
+    padding: 25px 16px;
+    padding-bottom: 68px;
+
+    background-color: $page-header-about-us_bg;
+    background-image: url("../img/bg-bicycle-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-bicycle-mobile@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.page-header__logo {
+  margin-bottom: 31px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 89px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 74px;
+  }
+}
+
+.page-header__tagline {
+  @include text-reset();
+
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+
+  color: $page-header_tagline;
+
+  @media (max-width: $tablet-width) {
+    width: 435px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.page-header__descr {
+  @include text-reset();
+
+  font-size: 20px;
+
+  color: $page-header_descr;
+
+  @media (max-width: $tablet-width) {
+    width: 435px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.page-header__feedback {
+  padding-top: 5px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 0;
+  }
+}

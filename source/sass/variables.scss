@@ -7,3 +7,55 @@ $mobile-width: 767px;
 $tablet-width: 1023px;
 $desktop-width-only: 1024px;
 $desktop-width-max: 1200px;
+
+// Descriptive variables for colors
+$black: #000000;
+$black-lighten: #1c1c1c;
+
+$grey-darkest: #131314;
+$grey-darken: #141517;
+$grey-dark: #48494d;
+$grey: #c9ccd4;
+$grey-light: #f6f6f6;
+
+$white: #ffffff;
+$accent: #0ad9c6;
+
+// Function variables for colors
+$page_text: $black;
+$page_bg: $white;
+
+$page-header_bg: $grey-darkest;
+$page-header-about-us_bg: $grey-darkest;
+$page-header_tagline: $white;
+$page-header_descr: rgba($white, 0.8);
+
+
+$main-nav_list-bg: $white;
+$main-nav_item-bg: $grey-darkest;
+$main-nav_item-bg-opened: $grey-light;
+$main-nav_item-border: rgba($white, 0.2);
+$main-nav_link: rgba($white, 0.7);
+$main-nav_link-opened: $grey-dark;
+$main-nav_link-hover: $accent;
+$main-nav_link-active: rgba($accent, 0.5);
+$main-nav_border: rgba($white, 0.2);
+
+$burger_bg: $accent;
+$burger_bg-hover: $white;
+$burger_line: $black;
+$burger_line-opened: rgba($grey-darken, 0.2);
+
+$feedback_text: $black;
+$feedback_text-desktop: $white;
+
+$form-input_bg: $white;
+$form-input_border: $grey;
+$form-input_text: rgba($black-lighten, 0.5);
+
+$btn_bg: $accent;
+$btn_bg-hover: $white;
+$btn_bg-active: rgba($accent, 0.5);
+$btn_text: $black;
+$btn_text-hover: $accent;
+$btn_text-active: rgba($accent, 0.5);

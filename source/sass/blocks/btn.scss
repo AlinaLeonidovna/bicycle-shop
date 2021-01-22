@@ -1,0 +1,32 @@
+.btn {
+  @include btn-reset();
+
+  display: block;
+  width: 100%;
+  padding: 11px;
+
+  font: inherit;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: normal;
+  text-align: center;
+  color: $btn_text;
+
+  background: $btn_bg;
+  border: 3px solid $btn_bg;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: $btn_bg-hover;
+  }
+
+  &:active {
+    padding: 14px;
+
+    background: $btn_bg-active;
+    border: none;
+  }
+}
