@@ -11,6 +11,7 @@ $desktop-width-max: 1200px;
 // Descriptive variables for colors
 $black: #000000;
 $black-lighten: #1c1c1c;
+$black-lightest: #1f1f1f;
 
 $grey-darkest: #131314;
 $grey-darken: #141517;
@@ -60,3 +61,6 @@ $btn_bg-active: rgba($accent, 0.5);
 $btn_text: $black;
 $btn_text-hover: $accent;
 $btn_text-active: rgba($accent, 0.5);
+
+$about-us_title: $black-lightest;
+$about-us_before: $accent;
