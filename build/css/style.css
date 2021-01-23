@@ -395,6 +395,8 @@ img {
   font-family: "Open Sans", "Tahoma", sans-serif;
   color: #000000;
   background-color: #ffffff; }
+  .page--scroll {
+    overflow: hidden; }
 
 @media (min-width: 1024px) {
   .page-header {
