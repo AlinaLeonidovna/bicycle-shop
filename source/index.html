@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="description">
+  <meta name="description" content="MooN - магазин самых лучших велосипедов на любой вкус и кошелёк в Санкт-Петербурге.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Магазин велосипедов "MooN"</title>
-  <link rel="preload" href="fonts/OpenSans-Ligth.woff2" as="font" crossorigin = "anonymous">
-  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin = "anonymous">
-  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" crossorigin = "anonymous">
-  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin = "anonymous">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Ligth.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
@@ -21,7 +21,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li>
             <a class="main-nav__link" href="#about-us">
               <span>О нас</span>
               <svg class="main-nav__svg" width="26" height="26" viewBox="0 0 26 26" fill="#48494d" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +29,7 @@
               </svg>
             </a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a class="main-nav__link" href="#types">
               <span>Виды велосипедов</span>
               <svg class="main-nav__svg" width="26" height="26" viewBox="0 0 26 26" fill="#48494d" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +37,7 @@
               </svg>
             </a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a class="main-nav__link" href="#video">
               <span>Видео про велосипеды</span>
               <svg class="main-nav__svg" width="26" height="26" viewBox="0 0 26 26" fill="#48494d" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,7 @@
               </svg>
             </a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a class="main-nav__link" href="#contacts">
               <span>Контакты</span>
               <svg class="main-nav__svg" width="26" height="26" viewBox="0 0 26 26" fill="#48494d" xmlns="http://www.w3.org/2000/svg">
@@ -59,17 +59,17 @@
         <a class="page-header__logo logo">
           <img class="logo__img" src="img/logo.svg" width="68" height="21" alt="Логотип магазина велосипедов «MooN».">
         </a>
-        <p class="page-header__tagline">Мы продаем велосипеды</p>
-        <p class="page-header__descr">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        <h1>Мы продаем велосипеды</h1>
+        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
       <div class="page-header__feedback feedback">
-        <p class="feedback__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
         <form class="feedback__form form" method="post" action="https://echo.htmlacademy.ru" autocomplete="off">
           <label class="visually-hidden" for="name">Ваше имя</label>
-          <input class="form__input" type="text" name="name" id="name" placeholder="Введите Ваше Имя" required>
+          <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required>
 
           <label class="visually-hidden" for="phone">Ваш номер телефона</label>
-          <input class="form__input" type="tel" name="phone" id="phone" pattern="+[7]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" placeholder="Введите Ваш номер телефона" required>
+          <input type="tel" name="phone" id="phone" pattern="+[7]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" placeholder="Введите Ваш номер телефона" required>
 
           <button class="btn" type="submit">Подобрать велосипед мечты</button>
         </form>
@@ -77,11 +77,11 @@
     </div>
   </header>
   <main>
-    <h1>Магазин велосипедов "MooN"</h1>
     <section class="about-us" id="about-us"></section>
     <section class="types" id="types"></section>
     <section class="video" id="video"></section>
   </main>
   <footer class="page-footer" id="contacts"></footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

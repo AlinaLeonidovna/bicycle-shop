@@ -32,9 +32,9 @@ $page-header_descr: rgba($white, 0.8);
 
 
 $main-nav_list-bg: $white;
-$main-nav_item-bg: $grey-darkest;
-$main-nav_item-bg-opened: $grey-light;
-$main-nav_item-border: rgba($white, 0.2);
+$main-nav_link-bg: $grey-darkest;
+$main-nav_link-bg-opened: $grey-light;
+$main-nav_link-border: rgba($white, 0.2);
 $main-nav_link: rgba($white, 0.7);
 $main-nav_link-opened: $grey-dark;
 $main-nav_link-hover: $accent;
@@ -43,6 +43,7 @@ $main-nav_border: rgba($white, 0.2);
 
 $burger_bg: $accent;
 $burger_bg-hover: $white;
+$burger_bg-active: rgba($accent, 0.5);
 $burger_line: $black;
 $burger_line-opened: rgba($grey-darken, 0.2);
 

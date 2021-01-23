@@ -5,30 +5,32 @@
     width: 100%;
     margin: 0 auto;
   }
-}
 
-.feedback__text {
-  @include text-reset();
+  p {
+    @include text-reset();
 
-  margin-bottom: 20px;
-
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 28px;
-  text-align: center;
-  color: $feedback_text-desktop;
-
-  @media (max-width: $tablet-width) {
-    width: 321px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-
-    font-size: 18px;
-    color: $feedback_text;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 288px;
     margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: $feedback_text-desktop;
+
+    @media (max-width: $tablet-width) {
+      width: 321px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+
+      font-size: 18px;
+      color: $feedback_text;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 288px;
+      margin-bottom: 20px;
+    }
   }
 }
+
+

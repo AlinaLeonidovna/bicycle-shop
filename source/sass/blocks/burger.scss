@@ -16,12 +16,27 @@
       height: 50px;
 
       background-color: $burger_bg;
-
-      &:hover,
-      &:focus {
-        background-color: $burger_bg-hover;
-      }
     }
+  }
+
+  &--opened {
+    @media (max-width: $tablet-width) {
+      background-color: $burger_bg-hover;
+    }
+  }
+
+  &--closed:hover,
+  &--closed:focus,
+  &--opened:hover,
+  &--opened:focus {
+    background-color: $burger_bg-hover;
+    border: 3px solid $burger_bg;
+  }
+
+  &--closed:active,
+  &--opened:active {
+    background-color: $burger_bg-active;
+    transition: 0.4s;
   }
 }
 
@@ -58,7 +73,9 @@
   }
 
   .burger--opened &::before {
+    width: 30px;
     top: 0;
+    left: -4px;
 
     background-color: $burger_line-opened;
 
@@ -70,7 +87,9 @@
   }
 
   .burger--opened &::after {
+    width: 30px;
     top: 0;
+    left: -4px;
 
     background-color: $burger_line-opened;
 

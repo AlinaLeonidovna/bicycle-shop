@@ -9,47 +9,50 @@
   @media (max-width: $mobile-width) {
     width: 288px;
   }
-}
 
-.form__input {
-  display: block;
+  input {
+    display: block;
 
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 11px 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 11px 30px;
 
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  letter-spacing: normal;
-  color: $form-input_text;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: $form-input_text;
 
-  background: $form-input_bg;
-  border: 1px solid $form-input_border;
-  border-radius: 4px;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    padding: 9px 28px;
-    border: 3px solid $accent;
-  }
-
-  @media (max-width: $tablet-width) {
-    padding: 11px 20px;
+    background: $form-input_bg;
+    border: 1px solid $form-input_border;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s ease-out;
 
     &:hover,
     &:focus {
-      padding: 9px 18px;
+      padding: 9px 28px;
+      border: 3px solid $accent;
     }
-  }
 
-  @media (max-width: $mobile-width) {
-    padding: 11px 26px;
+    @media (max-width: $tablet-width) {
+      padding: 11px 20px;
 
-    &:hover,
-    &:focus {
-      padding: 9px 24px;
+      &:hover,
+      &:focus {
+        padding: 9px 18px;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      padding: 11px 26px;
+
+      &:hover,
+      &:focus {
+        padding: 9px 24px;
+      }
     }
   }
 }
+
+
