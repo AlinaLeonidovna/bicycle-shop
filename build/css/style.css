@@ -402,7 +402,7 @@ img {
   .page-header {
     min-height: 825px;
     padding-top: 12px;
-    padding-bottom: 21px;
+    padding-bottom: 100px;
     background-color: #131314;
     background-image: url("../img/bg-bicycle-desktop@1x.jpg");
     background-repeat: no-repeat;
@@ -460,7 +460,7 @@ img {
       background-position: center; } }
   @media (max-width: 767px) {
     .page-header__about-us {
-      min-height: 319px;
+      min-height: 390px;
       padding: 25px 16px;
       padding-bottom: 68px;
       background-color: #131314;
@@ -871,3 +871,163 @@ img {
       margin-bottom: 35px;
       font-size: 18px;
       line-height: 34px; } }
+
+.types {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #f6f7f9; }
+  @media (max-width: 1023px) {
+    .types {
+      padding-top: 50px;
+      padding-bottom: 70px; } }
+  @media (max-width: 767px) {
+    .types {
+      padding-bottom: 52px; } }
+  .types h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #1f1f1f; }
+    @media (max-width: 1023px) {
+      .types h2 {
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 41px; } }
+
+.types__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: -10px;
+  margin-bottom: -60px;
+  margin-left: -10px; }
+  @media (max-width: 1023px) {
+    .types__list {
+      margin: 0;
+      margin-bottom: -50px; } }
+  @media (max-width: 767px) {
+    .types__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: -32px; } }
+
+.types__item {
+  position: relative;
+  z-index: 1;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 60px; }
+  @media (min-width: 1024px) {
+    .types__item:nth-of-type(3n+1) {
+      margin-top: 10px; } }
+  @media (min-width: 1024px) {
+    .types__item:nth-of-type(3n+2) {
+      margin-top: 40px; } }
+  @media (max-width: 1023px) {
+    .types__item {
+      margin-bottom: 50px; } }
+  @media (max-width: 767px) {
+    .types__item {
+      margin: 0;
+      margin-bottom: 43px; } }
+  .types__item::before, .types__item::after {
+    content: " ";
+    position: absolute; }
+  .types__item:nth-of-type(3n+1)::before {
+    top: 156px;
+    left: -60px;
+    z-index: -1;
+    width: 180px;
+    height: 180px;
+    border: 27px solid #0ad9c6;
+    border-radius: 50%; }
+    @media (max-width: 1023px) {
+      .types__item:nth-of-type(3n+1)::before {
+        top: 202px;
+        left: -37px;
+        width: 127px;
+        height: 127px;
+        border: 18px solid #0ad9c6; } }
+    @media (max-width: 767px) {
+      .types__item:nth-of-type(3n+1)::before {
+        left: -24px; } }
+  @media (min-width: 1024px) {
+    .types__item:nth-child(3n+2)::before, .types__item:nth-child(3n+2)::after {
+      z-index: 2;
+      width: 47px;
+      height: 47px;
+      border: 8px solid #0ad9c6; } }
+  @media (min-width: 1024px) {
+    .types__item:nth-child(3n+2)::before {
+      top: -18px;
+      left: -19px; } }
+  @media (min-width: 1024px) {
+    .types__item:nth-child(3n+2)::after {
+      right: -23px;
+      bottom: 33px; } }
+  .types__item:nth-of-type(3n)::before {
+    top: -32px;
+    right: -36px;
+    z-index: 2;
+    width: 95px;
+    height: 95px;
+    border: 17px solid #0ad9c6;
+    border-radius: 50%; }
+    @media (max-width: 1023px) {
+      .types__item:nth-of-type(3n)::before {
+        top: -20px;
+        right: -25px;
+        width: 68px;
+        height: 68px;
+        border: 13px solid #0ad9c6; } }
+    @media (max-width: 767px) {
+      .types__item:nth-of-type(3n)::before {
+        right: -15px; } }
+
+.type-card {
+  display: block;
+  color: #131314; }
+
+.type-card__img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 342px;
+  height: auto;
+  min-height: 503px;
+  margin-bottom: 20px;
+  background-color: #131314;
+  border-radius: 10px; }
+  @media (max-width: 1023px) {
+    .type-card__img {
+      width: 270px;
+      height: 300px;
+      min-height: 300px; } }
+
+.type-card__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: -0.5px; }

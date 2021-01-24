@@ -19,3 +19,8 @@
 
   cursor: pointer;
 }
+
+@mixin pseudo($content: " ", $position: absolute) {
+  content: $content;
+  position: $position;
+}

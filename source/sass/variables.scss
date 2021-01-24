@@ -18,6 +18,7 @@ $grey-darken: #141517;
 $grey-dark: #48494d;
 $grey: #c9ccd4;
 $grey-light: #f6f6f6;
+$grey-lightest: #f6f7f9;
 
 $white: #ffffff;
 $accent: #0ad9c6;
@@ -64,3 +65,9 @@ $btn_text-active: rgba($accent, 0.5);
 
 $about-us_title: $black-lightest;
 $about-us_before: $accent;
+
+$types_bg: $grey-lightest;
+$types_title: $black-lightest;
+$types_card-bg: $grey-darkest;
+$types_card-text: $grey-darkest;
+$types_element: $accent;
