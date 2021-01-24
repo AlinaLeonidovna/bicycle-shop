@@ -10,6 +10,7 @@ $desktop-width-max: 1200px;
 
 // Descriptive variables for colors
 $black: #000000;
+$black-light:#070707;
 $black-lighten: #1c1c1c;
 $black-lightest: #1f1f1f;
 
@@ -71,3 +72,9 @@ $types_title: $black-lightest;
 $types_card-bg: $grey-darkest;
 $types_card-text: $grey-darkest;
 $types_element: $accent;
+
+$video_bg: $grey-darkest;
+$video_title: $white;
+$video_text: rgba($white, 0.7);
+$video_img-bg: $grey-lightest;
+$video_icon: $black-light;

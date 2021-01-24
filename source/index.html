@@ -107,9 +107,9 @@
                 <source srcset="img/road-bicycle-desktop@1x.webp 1x, img/road-bicycle-desktop@2x.webp 2x" type="image/webp">
                 <source media="(max-width: 1023px)" srcset="img/road-bicycle-tablet@1x.jpg 1x, img/road-bicycle-tablet@2x.jpg 2x">
                 <!-- 1х: 342px; 2x: 684px -->
-                <img class="type-card__img" src="img/road-bicycle-desktop@1x.jpg" srcset="img/road-bicycle-desktop@2x.jpg" width="342" height="503" alt="Велосипед серебристого цвета с корзиной на руле возле кирпичной стены, которую оплетает плющ.">
+                <img src="img/road-bicycle-desktop@1x.jpg" srcset="img/road-bicycle-desktop@2x.jpg" width="342" height="503" alt="Велосипед серебристого цвета с корзиной на руле возле кирпичной стены, которую оплетает плющ.">
               </picture>
-              <h3 class="type-card__title">Дорожный велосипед</h3>
+              <h3>Дорожный велосипед</h3>
             </a>
           </li>
           <li class="types__item">
@@ -119,9 +119,9 @@
                 <source srcset="img/mountain-bicycle-desktop@1x.webp 1x, img/mountain-bicycle-desktop@2x.webp 2x" type="image/webp">
                 <source media="(max-width: 1023px)" srcset="img/mountain-bicycle-tablet@1x.jpg 1x, imgmountain-bicycle-tablet@2x.jpg 2x">
                 <!-- 1х: 342px; 2x: 684px -->
-                <img class="type-card__img" src="img/mountain-bicycle-desktop@1x.jpg" srcset="img/mountain-bicycle-desktop@2x.jpg" width="342" height="566" alt="Брутальный велосипед чёрного цвета, стоящий на вершине с видом на горы.">
+                <img src="img/mountain-bicycle-desktop@1x.jpg" srcset="img/mountain-bicycle-desktop@2x.jpg" width="342" height="566" alt="Брутальный велосипед чёрного цвета, стоящий на вершине с видом на горы.">
               </picture>
-              <h3 class="type-card__title">Горный велосипед</h3>
+              <h3>Горный велосипед</h3>
             </a>
           </li>
           <li class="types__item">
@@ -131,15 +131,37 @@
                 <source srcset="img/kid-bicycle-desktop@1x.webp 1x, img/kid-bicycle-desktop@2x.webp 2x" type="image/webp">
                 <source media="(max-width: 1023px)" srcset="img/kid-bicycle-tablet@1x.jpg 1x, img/kid-bicycle-tablet@2x.jpg 2x">
                 <!-- 1х: 342px; 2x: 684px -->
-                <img class="type-card__img" src="img/kid-bicycle-desktop@1x.jpg" srcset="img/kid-bicycle-desktop@2x.jpg" width="342" height="513" alt="Велосипед для девочки с розовыми крыльями, корзинкой и звонком.">
+                <img src="img/kid-bicycle-desktop@1x.jpg" srcset="img/kid-bicycle-desktop@2x.jpg" width="342" height="513" alt="Велосипед для девочки с розовыми крыльями, корзинкой и звонком.">
               </picture>
-              <h3 class="type-card__title">Детский велосипед</h3>
+              <h3>Детский велосипед</h3>
             </a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="video" id="video"></section>
+    <section class="video" id="video">
+      <div class="container">
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно раскажем про особенности выбора велосипеда для себя.</p>
+        <div class="video__wrap">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/cover-video-bicycle-mobile@1x.webp 1x, img/cover-video-bicycle-mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1023px)" srcset="img/cover-video-bicycle-tablet@1x.webp 1x, img/cover-video-bicycle-tablet@2x.webp 2x" type="image/webp">
+            <source srcset="img/cover-video-bicycle-desktop@1x.webp 1x, img/cover-video-bicycle-desktop@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/cover-video-bicycle-mobile@1x.jpg 1x, img/cover-video-bicycle-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/cover-video-bicycle-tablet@1x.jpg 1x, img/cover-video-bicycle-tablet@2x.jpg 2x">
+            <!-- 1х: 929px; 2x: 1858px -->
+            <img src="img/cover-video-bicycle-desktop@1x.jpg" srcset="img/cover-video-bicycle-desktop@2x.jpg" width="929" height="522" alt="Видео о подборе велосипеда.">
+          </picture>
+          <button class="video__btn btn btn--video" type="button">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10 4L23 13.1L10 22.2V4Z" fill="#070707"/>
+            </svg>
+            <span class="visually-hidden">Смотреть видео</span>
+          </button>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="page-footer" id="contacts"></footer>
   <script src="js/main.js"></script>
