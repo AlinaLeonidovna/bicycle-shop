@@ -163,7 +163,43 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer" id="contacts"></footer>
+  <footer class="page-footer" id="contacts">
+    <div class="page-footer_container container">
+      <h2>Как нас найти?</h2>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <div class="page-footer__wrap">
+        <picture>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616187893!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1607863527621!5m2!1sru!2sru" width="957" height="530" allowfullscreen="" aria-hidden="false" tabindex="0" title="Карта с адресом нашего магазина: город Санкт-Петербург, улица Большая Конюшенная, дом 19.">
+          </iframe>
+          <source media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" type="image/webp">
+          <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" type="image/webp">
+          <source srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" type="image/webp">
+          <source media="(max-width: 767px)" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <!-- 1х: 957px; 2x: 1914px -->
+          <img src="img/map-desktop@1x.jpg" srcset="img/map-desktop@2x.jpg" width="957" height="530" alt="Карта с адресом нашего магазина: город Санкт-Петербург, улица Большая Конюшенная, дом 19.">
+        </picture>
+      </div>
+      <ul class="page-footer__contacts contacts">
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:puteshestviemechta@gmail.ru" aria-label="Написать нам">
+            <svg class="contacts__icon contacts__icon--email" width="26" height="26">
+              <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+            </svg>
+            <span">puteshestviemechta@gmail.ru</span>
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link contacts__link--tel" href="tel:+749978468446" aria-label="Позвонить нам">
+            <svg class="contacts__icon contacts__icon--tel" width="26" height="26">
+              <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+            </svg>
+            <span>+7 (499) -784-684-46</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>
