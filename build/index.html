@@ -12,44 +12,48 @@
   <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+<!-- page--scroll -->
 <body class="page">
   <header class="page-header">
     <div class="page-header_container container">
+      <!-- main-nav--js -->
       <nav class="page-header__main-nav main-nav">
-        <button class="main-nav__burger burger" type="button">
+        <!-- burger--opened/burger--closed -->
+        <button class="main-nav__burger burger" type="button" aria-label="Открыть/закрыть меню">
           <span class="burger__line"></span>
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
+        <!-- main-nav__list--opened/main-nav__list--closed -->
         <ul class="main-nav__list">
           <li>
             <a class="main-nav__link" href="#about-us">
               <span>О нас</span>
-              <svg class="main-nav__svg" width="26" height="26" viewBox="0 0 26 26" fill="#48494d" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 9.4L14.6 14L10 18.6L11.4 20L17.4 14L11.4 8L10 9.4Z"></path>
+              <svg width="26" height="26">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="main-nav__link" href="#types">
               <span>Виды велосипедов</span>
-              <svg class="main-nav__svg" width="26" height="26" viewBox="0 0 26 26" fill="#48494d" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 9.4L14.6 14L10 18.6L11.4 20L17.4 14L11.4 8L10 9.4Z"></path>
+              <svg width="26" height="26">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="main-nav__link" href="#video">
               <span>Видео про велосипеды</span>
-              <svg class="main-nav__svg" width="26" height="26" viewBox="0 0 26 26" fill="#48494d" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 9.4L14.6 14L10 18.6L11.4 20L17.4 14L11.4 8L10 9.4Z"></path>
+              <svg width="26" height="26">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="main-nav__link" href="#contacts">
               <span>Контакты</span>
-              <svg class="main-nav__svg" width="26" height="26" viewBox="0 0 26 26" fill="#48494d" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 9.4L14.6 14L10 18.6L11.4 20L17.4 14L11.4 8L10 9.4Z"></path>
+              <svg width="26" height="26">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
               </svg>
             </a>
           </li>
@@ -57,7 +61,7 @@
       </nav>
       <div class="page-header__about-us">
         <a class="page-header__logo logo">
-          <img class="logo__img" src="img/logo.svg" width="68" height="21" alt="Логотип магазина велосипедов «MooN».">
+          <img src="img/logo.svg" width="68" height="21" alt="Логотип магазина велосипедов «MooN».">
         </a>
         <h1>Мы продаем велосипеды</h1>
         <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
@@ -80,7 +84,7 @@
     <section class="about-us" id="about-us">
       <div class="container">
         <h2>Несколько фактов о нас</h2>
-        <ul class="about-us__list">
+        <ul>
           <li class="about-us__item">
             Самый широкий выбор велосипедов!
           </li>
@@ -99,7 +103,7 @@
     <section class="types" id="types">
       <div class="container">
         <h2>Виды велосипедов</h2>
-        <ul class="types__list">
+        <ul>
           <li class="types__item">
             <a class="type-card" href="#">
               <picture>
@@ -168,9 +172,9 @@
       <h2>Как нас найти?</h2>
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div class="page-footer__wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616187893!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1607863527621!5m2!1sru!2sru" width="957" height="530" allowfullscreen="" aria-hidden="false" tabindex="0" title="Карта с адресом нашего магазина: город Санкт-Петербург, улица Большая Конюшенная, дом 19.">
+        </iframe>
         <picture>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616187893!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1607863527621!5m2!1sru!2sru" width="957" height="530" allowfullscreen="" aria-hidden="false" tabindex="0" title="Карта с адресом нашего магазина: город Санкт-Петербург, улица Большая Конюшенная, дом 19.">
-          </iframe>
           <source media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" type="image/webp">
           <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" type="image/webp">
           <source srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" type="image/webp">
@@ -180,14 +184,14 @@
           <img src="img/map-desktop@1x.jpg" srcset="img/map-desktop@2x.jpg" width="957" height="530" alt="Карта с адресом нашего магазина: город Санкт-Петербург, улица Большая Конюшенная, дом 19.">
         </picture>
       </div>
-      <ul class="page-footer__contacts contacts">
+      <ul class="contacts">
         <li class="contacts__item">
           <a class="contacts__link" href="mailto:puteshestviemechta@gmail.ru" aria-label="Написать нам">
             <svg class="contacts__icon contacts__icon--email" width="26" height="26">
               <use xlink:href="img/sprite_auto.svg#icon-email"></use>
             </svg>
-            <span">puteshestviemechta@gmail.ru
-          </span"></a>
+            <span>puteshestviemechta@gmail.ru</span>
+          </a>
         </li>
         <li class="contacts__item">
           <a class="contacts__link contacts__link--tel" href="tel:+749978468446" aria-label="Позвонить нам">

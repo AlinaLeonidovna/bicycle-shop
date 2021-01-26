@@ -1,17 +1,17 @@
 .video {
   padding-top: 120px;
 
-  background: linear-gradient(to top, $page_bg 0%, $page_bg 12.2%, $video_bg 12.2%, $video_bg 100%);
+  background: linear-gradient(to top, $page_bg 0%, $page_bg 98px, $video_bg 98px, $video_bg 100%);
   background-color: $video_bg;
 
   @media (max-width: $tablet-width) {
     padding-top: 71px;
-    background: linear-gradient(to top, $page_bg 0%, $page_bg 17.1%, $video_bg 17.1%, $video_bg 100%);
+    background: linear-gradient(to top, $page_bg 0%, $page_bg 85px, $video_bg 85px, $video_bg 100%);
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 83px;
-    background: linear-gradient(to top, $page_bg 0%, $page_bg 11.3%, $video_bg 11.3%, $video_bg 100%);
+    background: linear-gradient(to top, $page_bg 0%, $page_bg 48px, $video_bg 48px, $video_bg 100%);
   }
 
   h2 {

@@ -16,6 +16,8 @@
       height: 50px;
 
       background-color: $burger_bg;
+      outline: none;
+      transition: background 0.3s ease;
     }
   }
 
@@ -36,7 +38,7 @@
   &--closed:active,
   &--opened:active {
     background-color: $burger_bg-active;
-    transition: 0.4s;
+    border: none;
   }
 }
 
