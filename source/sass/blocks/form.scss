@@ -10,7 +10,7 @@
     width: 288px;
   }
 
-  input {
+  .form__input {
     display: block;
 
     width: 100%;
@@ -50,6 +50,20 @@
 
       &:hover,
       &:focus {
+        padding: 9px 24px;
+      }
+    }
+
+    &--error,
+    &--error:hover,
+    &--error:focus {
+      border: 3px solid red;
+
+      @media (max-width: $tablet-width) {
+        padding: 9px 18px;
+      }
+
+      @media (max-width: $mobile-width) {
         padding: 9px 24px;
       }
     }

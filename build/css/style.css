@@ -356,8 +356,7 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  scroll-behavior: smooth; }
+          box-sizing: border-box; }
 
 a {
   text-decoration: none; }
@@ -517,11 +516,33 @@ img {
       margin-bottom: 74px; } }
 
 .page-header__feedback {
+  width: 327px;
   padding-top: 5px; }
   @media (max-width: 1023px) {
     .page-header__feedback {
+      width: 100%;
       margin: 0 auto;
       padding: 0; } }
+  .page-header__feedback p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff; }
+    @media (max-width: 1023px) {
+      .page-header__feedback p {
+        width: 321px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: 18px;
+        color: #000000; } }
+    @media (max-width: 767px) {
+      .page-header__feedback p {
+        width: 288px;
+        margin-bottom: 20px; } }
 
 .main-nav {
   position: relative;
@@ -692,33 +713,6 @@ img {
     width: 68px;
     height: 21px; }
 
-.feedback {
-  width: 327px; }
-  @media (max-width: 1023px) {
-    .feedback {
-      width: 100%;
-      margin: 0 auto; } }
-  .feedback p {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 28px;
-    text-align: center;
-    color: #ffffff; }
-    @media (max-width: 1023px) {
-      .feedback p {
-        width: 321px;
-        margin: 0 auto;
-        margin-bottom: 30px;
-        font-size: 18px;
-        color: #000000; } }
-    @media (max-width: 767px) {
-      .feedback p {
-        width: 288px;
-        margin-bottom: 20px; } }
-
 .form {
   width: 327px; }
   @media (max-width: 1023px) {
@@ -728,7 +722,7 @@ img {
   @media (max-width: 767px) {
     .form {
       width: 288px; } }
-  .form input {
+  .form .form__input {
     display: block;
     width: 100%;
     margin-bottom: 20px;
@@ -745,18 +739,26 @@ img {
     cursor: pointer;
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease; }
-    .form input:hover, .form input:focus {
+    .form .form__input:hover, .form .form__input:focus {
       padding: 9px 28px;
       border: 3px solid #0ad9c6; }
     @media (max-width: 1023px) {
-      .form input {
+      .form .form__input {
         padding: 11px 20px; }
-        .form input:hover, .form input:focus {
+        .form .form__input:hover, .form .form__input:focus {
           padding: 9px 18px; } }
     @media (max-width: 767px) {
-      .form input {
+      .form .form__input {
         padding: 11px 26px; }
-        .form input:hover, .form input:focus {
+        .form .form__input:hover, .form .form__input:focus {
+          padding: 9px 24px; } }
+    .form .form__input--error, .form .form__input--error:hover, .form .form__input--error:focus {
+      border: 3px solid red; }
+      @media (max-width: 1023px) {
+        .form .form__input--error, .form .form__input--error:hover, .form .form__input--error:focus {
+          padding: 9px 18px; } }
+      @media (max-width: 767px) {
+        .form .form__input--error, .form .form__input--error:hover, .form .form__input--error:focus {
           padding: 9px 24px; } }
 
 .btn {
