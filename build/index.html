@@ -12,15 +12,18 @@
   <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+<!-- page--scroll -->
 <body class="page">
   <header class="page-header">
-    <div class="page-header_container container">
+    <div class="page-header__container container">
+      <!-- main-nav--closed, main-nav--opened -->
       <nav class="page-header__main-nav main-nav">
+        <!-- burger--closed, burger--opened -->
         <button class="main-nav__burger burger" type="button" aria-label="Открыть/закрыть меню">
           <span class="burger__line"></span>
           <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
-        <ul class="main-nav__list">
+        <ul>
           <li>
             <a class="main-nav__link" href="#about-us">
               <span>О нас</span>
@@ -66,9 +69,11 @@
         <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
         <form class="form" method="post" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="name">Ваше имя</label>
-          <input class="form__input" type="text" name="name" id="name" placeholder="Введите Ваше Имя">
+          <!-- form__error -->
+          <input type="text" name="name" id="name" placeholder="Введите Ваше Имя">
           <label class="visually-hidden" for="phone">Ваш номер телефона</label>
-          <input class="form__input" type="tel" name="phone" id="phone" pattern="(\+7|8)\d{10}" placeholder="Введите Ваш номер телефона">
+          <!-- form__error -->
+          <input type="tel" name="phone" id="phone" pattern="[0-9]{11}" placeholder="Введите Ваш номер телефона">
           <button class="btn" type="submit">Подобрать велосипед мечты</button>
         </form>
       </div>

@@ -1,16 +1,5 @@
 .form {
-  width: 327px;
-
-  @media (max-width: $tablet-width) {
-    width: 321px;
-    margin: 0 auto;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 288px;
-  }
-
-  .form__input {
+  input {
     display: block;
 
     width: 100%;
@@ -53,19 +42,20 @@
         padding: 9px 24px;
       }
     }
+  }
 
-    &--error,
-    &--error:hover,
-    &--error:focus {
-      border: 3px solid red;
+  .form__error,
+  .form__error:hover,
+  .form__error:focus {
+    border: 3px solid $form-input_border-error;
+    padding: 9px 28px;
 
-      @media (max-width: $tablet-width) {
-        padding: 9px 18px;
-      }
+    @media (max-width: $tablet-width) {
+      padding: 9px 18px;
+    }
 
-      @media (max-width: $mobile-width) {
-        padding: 9px 24px;
-      }
+    @media (max-width: $mobile-width) {
+      padding: 9px 24px;
     }
   }
 }

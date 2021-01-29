@@ -4,12 +4,13 @@
 
   var page = document.querySelector('.page');
   var mainNav = document.querySelector('.main-nav');
-  var mainNavList = mainNav.querySelector('.main-nav__list');
+  var mainNavList = mainNav.querySelector('ul');
   var burgerBtn = mainNav.querySelector('.burger');
 
-  mainNav.classList.add('main-nav--js');
-  burgerBtn.classList.add('burger--closed');
-  mainNavList.classList.add('main-nav__list--closed');
+  if (page !== null && mainNav !== null && mainNavList !== null && burgerBtn !== null) {
+    burgerBtn.classList.add('burger--closed');
+    mainNav.classList.add('main-nav--closed');
+  }
 
   var onOpenMenuClick = function () {
     closeMenu();
@@ -26,8 +27,8 @@
     page.classList.add('page--scroll');
     burgerBtn.classList.remove('burger--closed');
     burgerBtn.classList.add('burger--opened');
-    mainNavList.classList.remove('main-nav__list--closed');
-    mainNavList.classList.add('main-nav__list--opened');
+    mainNav.classList.remove('main-nav--closed');
+    mainNav.classList.add('main-nav--opened');
     mainNavList.addEventListener('click', onOpenMenuClick);
     document.addEventListener('keydown', onEscPress);
   };
@@ -36,14 +37,14 @@
     page.classList.remove('page--scroll');
     burgerBtn.classList.remove('burger--opened');
     burgerBtn.classList.add('burger--closed');
-    mainNavList.classList.remove('main-nav__list--opened');
-    mainNavList.classList.add('main-nav__list--closed');
+    mainNav.classList.remove('main-nav--opened');
+    mainNav.classList.add('main-nav--closed');
     mainNavList.removeEventListener('click', onOpenMenuClick);
     document.removeEventListener('keydown', onEscPress);
   };
 
   burgerBtn.addEventListener('click', function () {
-    if (mainNavList.classList.contains('main-nav__list--opened')) {
+    if (mainNav.classList.contains('main-nav--opened')) {
       closeMenu();
     } else {
       openMenu();
@@ -60,12 +61,15 @@
   var inputName = form.querySelector('#name');
   var inputPhone = form.querySelector('#phone');
 
+  var formatPhone = '89001234567';
+  var parameterPhone = /\D/;
+
   function formAddError(input) {
-    input.classList.add('form__input--error');
+    input.classList.add('form__error');
   }
 
   function formRemoveError(input) {
-    input.classList.remove('form__input--error');
+    input.classList.remove('form__error');
   }
 
   function formValidate() {
@@ -75,6 +79,13 @@
 
     inputName.addEventListener('input', function () {
       formRemoveError(inputName);
+
+      if (inputName.value.length === 0) {
+        inputName.setCustomValidity('Поле обязательно для заполнения.');
+      } else {
+        inputName.setCustomValidity('');
+      }
+      inputName.reportValidity();
     });
 
     if (inputPhone.value === '') {
@@ -83,7 +94,18 @@
 
     inputPhone.addEventListener('input', function () {
       formRemoveError(inputPhone);
-      inputPhone.setCustomValidity('Формат телефона +7/8 1234567890');
+
+      if (inputPhone.value.length !== 0 && parameterPhone .test(inputPhone.value)) {
+        inputPhone.setCustomValidity('Номер телефона должен содержать только цифры. Укажите телефон в формате ' + formatPhone + '.');
+        inputPhone.value = inputPhone.value.replace(parameterPhone, '');
+      } else if (inputPhone.value.length > 11) {
+        inputPhone.setCustomValidity('Укажите телефон в формате ' + formatPhone + '.');
+      } else if (inputPhone.value.length === 0) {
+        inputPhone.setCustomValidity('Поле обязательно для заполнения.');
+      } else {
+        inputPhone.setCustomValidity('');
+      }
+      inputPhone.reportValidity();
     });
   }
 

@@ -23,6 +23,7 @@ $grey-lightest: #f6f7f9;
 
 $white: #ffffff;
 $accent: #0ad9c6;
+$error: #ff0000;
 
 // Function variables for colors
 $page_text: $black;
@@ -55,6 +56,7 @@ $feedback_text-desktop: $white;
 
 $form-input_bg: $white;
 $form-input_border: $grey;
+$form-input_border-error: $error;
 $form-input_text: rgba($black-lighten, 0.5);
 
 $btn_bg: $accent;

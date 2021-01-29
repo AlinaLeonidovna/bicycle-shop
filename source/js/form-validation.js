@@ -6,12 +6,15 @@
   var inputName = form.querySelector('#name');
   var inputPhone = form.querySelector('#phone');
 
+  var formatPhone = '89001234567';
+  var parameterPhone = /\D/;
+
   function formAddError(input) {
-    input.classList.add('form__input--error');
+    input.classList.add('form__error');
   }
 
   function formRemoveError(input) {
-    input.classList.remove('form__input--error');
+    input.classList.remove('form__error');
   }
 
   function formValidate() {
@@ -21,6 +24,13 @@
 
     inputName.addEventListener('input', function () {
       formRemoveError(inputName);
+
+      if (inputName.value.length === 0) {
+        inputName.setCustomValidity('Поле обязательно для заполнения.');
+      } else {
+        inputName.setCustomValidity('');
+      }
+      inputName.reportValidity();
     });
 
     if (inputPhone.value === '') {
@@ -29,7 +39,18 @@
 
     inputPhone.addEventListener('input', function () {
       formRemoveError(inputPhone);
-      inputPhone.setCustomValidity('Формат телефона +7/8 1234567890');
+
+      if (inputPhone.value.length !== 0 && parameterPhone .test(inputPhone.value)) {
+        inputPhone.setCustomValidity('Номер телефона должен содержать только цифры. Укажите телефон в формате ' + formatPhone + '.');
+        inputPhone.value = inputPhone.value.replace(parameterPhone, '');
+      } else if (inputPhone.value.length > 11) {
+        inputPhone.setCustomValidity('Укажите телефон в формате ' + formatPhone + '.');
+      } else if (inputPhone.value.length === 0) {
+        inputPhone.setCustomValidity('Поле обязательно для заполнения.');
+      } else {
+        inputPhone.setCustomValidity('');
+      }
+      inputPhone.reportValidity();
     });
   }
 

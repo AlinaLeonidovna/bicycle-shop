@@ -7,7 +7,7 @@
     width: 880px;
   }
 
-  .main-nav__list {
+  ul {
     @include list-reset();
 
     display: flex;
@@ -21,32 +21,32 @@
     @media (max-width: $tablet-width) {
       display: block;
     }
+  }
+}
 
-    &--closed {
-      @media (max-width: $tablet-width) {
-        display: none;
-      }
-    }
+.main-nav--closed ul {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
 
-    &--opened {
-      @media (max-width: $tablet-width) {
-        position: fixed;
-        z-index: 5;
-        overflow-y: auto;
+.main-nav--opened ul {
+  @media (max-width: $tablet-width) {
+    position: fixed;
+    z-index: 5;
+    overflow-y: auto;
 
-        width: 100%;
-        height: 100vh;
-        padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
 
-        background-color: $main-nav_list-bg;
+    background-color: $main-nav_list-bg;
+  }
+}
 
-        li:not(:last-child) {
-          @media (max-width: $tablet-width) {
-            margin-bottom: 29px;
-          }
-        }
-      }
-    }
+.main-nav--opened li:not(:last-child) {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 29px;
   }
 }
 
@@ -79,7 +79,7 @@
     border-bottom: 1px solid $main-nav_link-border;
   }
 
-  .main-nav__list--opened & {
+  .main-nav--opened & {
     @media (max-width: $tablet-width) {
       color: $main-nav_link-opened;
 
@@ -88,14 +88,14 @@
     }
   }
 
-  .main-nav__list--opened &:hover,
-  .main-nav__list--opened &:focus {
+  .main-nav--opened &:hover,
+  .main-nav--opened &:focus {
     @media (max-width: $tablet-width) {
       color: $main-nav_link-hover;
     }
   }
 
-  .main-nav__list--opened &:active {
+  .main-nav--opened &:active {
     @media (max-width: $tablet-width) {
       background-color: $main-nav_link-bg;
     }
@@ -107,20 +107,6 @@
     @media (max-width: $tablet-width) {
       display: block;
       fill: currentColor;
-    }
-
-    .main-nav__link:hover &,
-    .main-nav__link:focus & {
-      @media (max-width: $tablet-width) {
-        fill: currentColor;
-      }
-    }
-
-    .main-nav__list--opened & {
-      @media (max-width: $tablet-width) {
-        fill: currentColor;
-        opacity: 0.5;
-      }
     }
   }
 }
