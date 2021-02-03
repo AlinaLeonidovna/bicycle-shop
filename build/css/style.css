@@ -313,7 +313,7 @@ template {
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/OpenSans-Ligth.woff2") format("woff2"), url("../fonts/OpenSans-Ligth.woff") format("woff"); }
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff"); }
 
 @font-face {
   font-family: "Open Sans";
