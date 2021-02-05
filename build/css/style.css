@@ -721,7 +721,7 @@ img {
   font-size: 15px;
   line-height: 24px;
   letter-spacing: normal;
-  color: rgba(28, 28, 28, 0.5);
+  color: #000000;
   background: #ffffff;
   border: 1px solid #c9ccd4;
   border-radius: 4px;
@@ -942,7 +942,8 @@ img {
     @media (max-width: 1023px) {
       .types ul {
         margin: 0;
-        margin-bottom: -50px; } }
+        margin-bottom: -50px;
+        padding: 0 20px; } }
     @media (max-width: 767px) {
       .types ul {
         -webkit-box-orient: vertical;
@@ -952,7 +953,8 @@ img {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        margin-bottom: -32px; } }
+        margin-bottom: -32px;
+        padding: 0; } }
 
 .types__item {
   position: relative;

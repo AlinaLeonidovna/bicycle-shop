@@ -7,12 +7,11 @@
   var inputPhone = form.querySelector('#phone');
 
   var PHONE = {
-    parameter: /\D/,
-    format: '89001234567'
+    parameter: /^(\+7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/,
+    format: '+7/8 9001234567'
   };
 
   var MESSAGE = {
-    numeral: 'Номер телефона должен содержать только цифры. ',
     format: 'Укажите телефон в формате ',
     requiredField: 'Поле обязательно для заполнения.'
   };
@@ -47,10 +46,7 @@
 
     inputPhone.addEventListener('input', function () {
       formRemoveError(inputPhone);
-      if (inputPhone.value.length !== 0 && PHONE.parameter .test(inputPhone.value)) {
-        inputPhone.setCustomValidity(MESSAGE.numeral + MESSAGE.format + PHONE.format);
-        inputPhone.value = inputPhone.value.replace(PHONE.parameter, '');
-      } else if (inputPhone.value.length > 11) {
+      if (inputPhone.value.length !== 0 && !PHONE.parameter.test(inputPhone.value)) {
         inputPhone.setCustomValidity(MESSAGE.format + PHONE.format);
       } else if (inputPhone.value.length === 0) {
         inputPhone.setCustomValidity(MESSAGE.requiredField);
